@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import { links } from "@/config";
 export default function Home() {
   const [capacity, setCapacity] = useState("256GB");
   const [color, setColor] = useState("Titanium Black");
@@ -20,10 +20,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-gray-900">SAMSUNG</div>
           <nav className="hidden md:flex gap-6 text-sm">
-            <a href="#produk" className="hover:text-blue-600">Produk</a>
-            <a href="#fitur" className="hover:text-blue-600">Fitur</a>
-            <a href="#spesifikasi" className="hover:text-blue-600">Spesifikasi</a>
-            <a href="#faq" className="hover:text-blue-600">FAQ</a>
+            <a href={links.produk} className="hover:text-blue-600">Produk</a>
+            <a href={links.fitur} className="hover:text-blue-600">Fitur</a>
+            <a href={links.spesifikasi} className="hover:text-blue-600">Spesifikasi</a>
+            <a href={links.faq} className="hover:text-blue-600">FAQ</a>
           </nav>
           <button className="bg-black text-white px-4 py-2 rounded-full text-sm">
             Keranjang
