@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nama-project-kamu.vercel.app"), // ganti nanti setelah deploy
+  metadataBase: new URL("https://liga138-platform.vercel.app/"), // ganti nanti setelah deploy
   title: {
-    default: "Galaxy S26 Ultra | Beli Sekarang",
+    default: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
     template: "%s | Samsung",
   },
   description:
-    "Temukan Samsung Galaxy S26 Ultra. Pilih kapasitas dan warna, lihat fitur unggulan kamera AI, layar AMOLED, dan dapatkan penawaran terbaik.",
+    "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
   keywords: [
     "Galaxy S26 Ultra",
     "Samsung Galaxy S26 Ultra",
@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Samsung" }],
   creator: "Samsung",
   publisher: "Samsung",
+  verification: {
+    google: "CYPel2h3SMSYqXzdhoNN0OIq_97bu5MukkE3fgyxMiA",
+  },
   robots: {
     index: true,
     follow: true,
@@ -35,9 +38,9 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: "/",
     siteName: "Samsung",
-    title: "Galaxy S26 Ultra | Beli Sekarang",
+    title: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
     description:
-      "Temukan Samsung Galaxy S26 Ultra. Pilih kapasitas dan warna, lihat fitur unggulan kamera AI, layar AMOLED, dan dapatkan penawaran terbaik.",
+      "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
     images: [
       {
         url: "/og-image.jpg", // nanti bisa diganti dengan gambar asli
@@ -49,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Galaxy S26 Ultra | Beli Sekarang",
+    title: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
     description:
-      "Temukan Samsung Galaxy S26 Ultra. Pilih kapasitas dan warna, lihat fitur unggulan kamera AI, layar AMOLED, dan dapatkan penawaran terbaik.",
+      "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
     images: ["/og-image.jpg"],
   },
   alternates: {
