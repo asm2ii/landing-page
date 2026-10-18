@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   other: {
-  amphtml: "https://liga138-platform.vercel.app/amp",
+  amphtml: "https://bolasport.cc/amp-vercel/",
 },
 };
 
