@@ -16,6 +16,46 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+    {/* Schema */}
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          name: "Liga138 Platform",
+          url: "https://liga138-platform.vercel.app",
+          description: "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini.",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://liga138-platform.vercel.app/?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
+        },
+        {
+          "@type": "Product",
+          name: "Liga138 Platform",
+          image: "https://liga138-platform.vercel.app/produk.jpg",
+          description: "Platform prediksi skor dan analisis pertandingan sepak bola.",
+          brand: {
+            "@type": "Brand",
+            name: "Liga138",
+          },
+          offers: {
+            "@type": "Offer",
+            url: "https://liga138-platform.vercel.app",
+            priceCurrency: "IDR",
+            price: "19999000",
+            priceValidUntil: "2026-12-31",
+            availability: "https://schema.org/InStock",
+          },
+        },
+      ],
+    }),
+  }}
+/>
       {/* Header */}
       <header className="border-b bg-white sticky top-0 z-50">
   <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
