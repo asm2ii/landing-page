@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { links } from "./config";
+import Kontenin from "./konten";
 export default function Home() {
   const [capacity, setCapacity] = useState("256GB");
   const [color, setColor] = useState("Titanium Black");
@@ -212,7 +213,7 @@ export default function Home() {
     ))}
   </div>
 </section>
-
+<KontenPanjang />
       {/* Footer */}
       <footer className="bg-black text-white py-8 text-center text-sm">
         <p>© 2026 Samsung. Semua hak dilindungi.</p>
