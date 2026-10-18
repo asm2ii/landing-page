@@ -4,21 +4,27 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://liga138-platform.vercel.app/"), // ganti nanti setelah deploy
   title: {
-    default: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
-    template: "%s | Samsung",
-  },
+  default: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
+},
   description:
     "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
   keywords: [
-    "Galaxy S26 Ultra",
-    "Samsung Galaxy S26 Ultra",
-    "beli Galaxy S26 Ultra",
-    "harga Galaxy S26 Ultra",
-    "smartphone flagship",
-  ],
-  authors: [{ name: "Samsung" }],
-  creator: "Samsung",
-  publisher: "Samsung",
+  "Liga138 Platform",
+  "Liga138 informasi",
+  "Liga138 analisis",
+  "prediksi skor Liga138",
+  "klasemen liga",
+  "analisis pertandingan bola",
+  "update kompetisi sepak bola",
+  "jadwal bola",
+  "platform informasi bola",
+  "prediksi pertandingan",
+  "klasemen terkini",
+  "info sepak bola"
+],
+  authors: [{ name: "LIGA138" }],
+  creator: "LIGA138",
+  publisher: "LIGA138",
   verification: {
     google: "CYPel2h3SMSYqXzdhoNN0OIq_97bu5MukkE3fgyxMiA",
   },
@@ -37,7 +43,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     url: "/",
-    siteName: "Samsung",
+    siteName: "LIGA138",
     title: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
     description:
       "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
@@ -46,7 +52,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg", // nanti bisa diganti dengan gambar asli
         width: 1200,
         height: 630,
-        alt: "Galaxy S26 Ultra",
+        alt: "LIGA138 platform",
       },
     ],
   },

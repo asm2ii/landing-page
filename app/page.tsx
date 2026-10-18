@@ -6,7 +6,7 @@ export default function Home() {
   const [capacity, setCapacity] = useState("256GB");
   const [color, setColor] = useState("Titanium Black");
 
-  const capacities = ["256GB", "512GB", "1TB"];
+  const capacities = ["Parlay", "Slot", "Casino", "PKV"];
   const colors = [
     { name: "Titanium Black", hex: "#1a1a1a" },
     { name: "Titanium Gray", hex: "#8a8a8a" },
