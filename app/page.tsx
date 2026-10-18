@@ -22,6 +22,7 @@ export default function Home() {
           <nav className="hidden md:flex gap-6 text-sm">
             <a href="#produk" className="hover:text-blue-600">Produk</a>
             <a href="#fitur" className="hover:text-blue-600">Fitur</a>
+            <a href="#spesifikasi" className="hover:text-blue-600">Spesifikasi</a>
             <a href="#faq" className="hover:text-blue-600">FAQ</a>
           </nav>
           <button className="bg-black text-white px-4 py-2 rounded-full text-sm">
@@ -32,7 +33,6 @@ export default function Home() {
 
       {/* Hero + Product */}
       <section id="produk" className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-12">
-        {/* Image Placeholder */}
         <div className="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center">
           <div className="text-center">
             <div className="text-6xl mb-4">📱</div>
@@ -40,17 +40,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Product Info */}
         <div>
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Galaxy S26 Ultra</h1>
           <p className="text-xl text-gray-600 mb-6">Smartphone flagship dengan kamera AI dan layar terbaik.</p>
-
           <div className="mb-6">
             <p className="text-3xl font-bold text-gray-900">Rp 19.999.000</p>
             <p className="text-sm text-green-600">Hemat hingga Rp 2.200.000</p>
           </div>
 
-          {/* Capacity */}
           <div className="mb-6">
             <h3 className="font-semibold mb-3">Kapasitas</h3>
             <div className="flex gap-3">
@@ -59,9 +56,7 @@ export default function Home() {
                   key={cap}
                   onClick={() => setCapacity(cap)}
                   className={`px-5 py-3 border rounded-xl ${
-                    capacity === cap
-                      ? "border-black bg-black text-white"
-                      : "border-gray-300 hover:border-gray-500"
+                    capacity === cap ? "border-black bg-black text-white" : "border-gray-300 hover:border-gray-500"
                   }`}
                 >
                   {cap}
@@ -70,7 +65,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Color */}
           <div className="mb-8">
             <h3 className="font-semibold mb-3">Warna: {color}</h3>
             <div className="flex gap-3">
@@ -78,9 +72,7 @@ export default function Home() {
                 <button
                   key={c.name}
                   onClick={() => setColor(c.name)}
-                  className={`w-12 h-12 rounded-full border-2 ${
-                    color === c.name ? "border-black" : "border-gray-300"
-                  }`}
+                  className={`w-12 h-12 rounded-full border-2 ${color === c.name ? "border-black" : "border-gray-300"}`}
                   style={{ backgroundColor: c.hex }}
                   title={c.name}
                 />
@@ -112,6 +104,47 @@ export default function Home() {
               <div key={f.title} className="bg-white p-6 rounded-2xl shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
                 <p className="text-gray-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Spesifikasi (BARU) */}
+      <section id="spesifikasi" className="py-16 max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-10">Spesifikasi</h2>
+        <div className="border rounded-2xl overflow-hidden">
+          {[
+            ["Layar", "6.8\" Dynamic AMOLED 2X"],
+            ["Prosesor", "Snapdragon 8 Elite"],
+            ["RAM", "12GB"],
+            ["Kamera Belakang", "200MP + 50MP + 12MP + 10MP"],
+            ["Baterai", "5000 mAh"],
+            ["Sistem Operasi", "Android 16"],
+          ].map(([label, value]) => (
+            <div key={label} className="grid grid-cols-2 border-b last:border-b-0">
+              <div className="bg-gray-50 p-4 font-medium">{label}</div>
+              <div className="p-4">{value}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Ulasan (BARU) */}
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ulasan Pelanggan</h2>
+          <p className="text-5xl font-bold text-yellow-500 mb-2">4.8</p>
+          <p className="text-gray-600 mb-8">Dari 28.000+ ulasan</p>
+          <div className="grid md:grid-cols-3 gap-6 text-left">
+            {[
+              { name: "Andi", text: "Kamera sangat jernih, baterai awet seharian." },
+              { name: "Budi", text: "Layarnya luar biasa, nyaman untuk nonton." },
+              { name: "Citra", text: "Performa cepat dan desainnya premium." },
+            ].map((r) => (
+              <div key={r.name} className="bg-white p-6 rounded-2xl">
+                <p className="mb-3">"{r.text}"</p>
+                <p className="font-semibold text-sm">— {r.name}</p>
               </div>
             ))}
           </div>
