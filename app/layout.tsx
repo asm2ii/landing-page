@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://liga138-platform.vercel.app/"), // ganti nanti setelah deploy
   title: {
   default: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
-},
   description:
     "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
   keywords: [
