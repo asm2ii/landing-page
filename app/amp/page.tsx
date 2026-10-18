@@ -1,71 +1,51 @@
-import { links } from "../config";
-export const metadata = {
-  title: "Liga138 Platform",
-  alternates: {
-    canonical: "https://liga138-platform.vercel.app/",
-  },
-};
-
 export default function AmpPage() {
   return (
-    <html lang="id" {...{ amp: "" }}>
+    <html amp="" lang="id">
       <head>
         <meta charSet="utf-8" />
+        <title>Liga138 Platform</title>
+        <link rel="canonical" href="https://liga138-platform.vercel.app/" />
         <meta
           name="viewport"
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
-        <link rel="canonical" href="https://liga138-platform.vercel.app/" />
-        <style
-          amp-boilerplate=""
-          dangerouslySetInnerHTML={{
-            __html: `body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}`,
-          }}
-        />
+        <style amp-boilerplate="">
+          {`body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}`}
+        </style>
         <noscript>
-          <style
-            amp-boilerplate=""
-            dangerouslySetInnerHTML={{
-              __html: `body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`,
-            }}
-          />
+          <style amp-boilerplate="">
+            {`body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`}
+          </style>
         </noscript>
-        <script async src="https://cdn.ampproject.org/v0.js" />
-        <style>{`
-          body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; margin: 0; }
-          .container { max-width: 480px; margin: 0 auto; padding: 24px 16px; }
-          .card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-          .content { padding: 24px; text-align: center; }
-          h1 { font-size: 24px; margin: 16px 0 8px; color: #111827; }
-          p { color: #4b5563; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
-          .btn { display: block; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: 600; margin-bottom: 12px; }
-          .btn-primary { background: #111827; color: white; }
-          .btn-secondary { background: #f3f4f6; color: #111827; border: 1px solid #e5e7eb; }
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <style amp-custom>{`
+          body { font-family: system-ui, sans-serif; background:#f8fafc; margin:0; }
+          .wrap { max-width:480px; margin:0 auto; padding:20px; }
+          .card { background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+          .content { padding:24px; text-align:center; }
+          h1 { font-size:22px; margin:0 0 8px; }
+          p { color:#4b5563; margin-bottom:20px; }
+          .btn { display:block; padding:14px; border-radius:10px; text-decoration:none; font-weight:600; margin-bottom:10px; }
+          .btn1 { background:#111; color:#fff; }
+          .btn2 { background:#f3f4f6; color:#111; }
         `}</style>
       </head>
       <body>
-        <div className="container">
+        <div className="wrap">
           <div className="card">
-            <img
+            <amp-img
               src="/produk.jpg"
-              alt="Liga138 Platform"
-              style={{ width: "100%", height: "auto", display: "block" }}
-            />
+              width="600"
+              height="400"
+              layout="responsive"
+              alt="Liga138"
+            ></amp-img>
             <div className="content">
               <h1>Liga138 Platform</h1>
-              <p>
-                Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini.
-              </p>
-
-              <a href={links.daftar} className="btn btn-primary">
-                Link Login Alternatif 1
-                </a>
-                <a href={links.login} className="btn btn-secondary">
-                Link Login Alternatif 2
-                </a>
-                <a href={links.jadwal} className="btn btn-secondary">
-                Link Login Alternatif 3
-                </a>
+              <p>Prediksi skor dan analisis pertandingan sepak bola.</p>
+              <a href="#" className="btn btn1">Lihat Analisis</a>
+              <a href="#" className="btn btn2">Lihat Klasemen</a>
+              <a href="#" className="btn btn2">Lihat Jadwal</a>
             </div>
           </div>
         </div>
