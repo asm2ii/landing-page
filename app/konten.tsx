@@ -1,69 +1,57 @@
 export default function Kontenin() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold mb-8 text-center">Artikel Lengkap</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">
+        Liga138 Platform: Informasi & Analisis Sepak Bola
+      </h2>
       
       <div className="space-y-6 text-gray-700 leading-relaxed">
         <p>
-          Liga138 Platform hadir sebagai sumber informasi sepak bola yang fokus pada analisis pertandingan, prediksi skor, klasemen liga, serta update kompetisi terkini. Platform ini dirancang untuk membantu penggemar bola memahami jalannya pertandingan secara lebih mendalam sebelum mengambil keputusan berdasarkan data yang tersedia.
+  <a href={links.liga138}>Liga138</a> Platform dibuat khusus sebagai tempat informasi sepak bola yang fokus menyajikan analisis pertandingan, prediksi skor, klasemen liga, dan update kompetisi terbaru. Semua informasi disusun supaya mudah dipahami, baik buat yang baru mengikuti bola maupun yang sudah rutin memantau jadwal.
+</p>
+
+        <p>
+          Di Liga138 Platform, pengguna bisa langsung melihat ringkasan kondisi tim sebelum pertandingan berlangsung. Analisis yang diberikan tidak bertele-tele, cukup menyoroti poin penting seperti form terkini, catatan pertemuan sebelumnya, serta faktor yang bisa mempengaruhi jalannya laga. Ini membuat informasi terasa lebih praktis dipakai sehari-hari.
+        </p>
+
+        <h3 className="text-2xl font-semibold mt-10 mb-4">Analisis Pertandingan di Liga138 Platform</h3>
+        <p>
+          Analisis pertandingan menjadi bagian utama yang selalu diperbarui di Liga138 Platform. Setiap analisis mencoba menjelaskan bagaimana kedua tim biasanya bermain, siapa pemain kunci yang perlu diperhatikan, dan di mana biasanya peluang tercipta. Dengan begitu, pembaca bisa punya gambaran lebih jelas sebelum pertandingan dimulai.
         </p>
 
         <p>
-          Berbeda dengan situs utama yang lebih berorientasi pada layanan lengkap, Liga138 Platform menempatkan diri sebagai pelengkap informasi. Di sini, pengguna bisa menemukan ringkasan analisis, perkembangan klasemen, dan prediksi skor yang disusun secara sederhana namun tetap berbasis data. Pendekatan ini membuat informasi lebih mudah dicerna tanpa mengurangi kualitas konten.
+          Informasi yang disajikan tetap berbasis data yang tersedia, seperti statistik tembakan, penguasaan bola, dan performa di beberapa laga terakhir. Liga138 Platform tidak menambahkan opini berlebihan, melainkan merangkum apa yang terlihat dari angka dan catatan pertandingan. Pendekatan ini membuat analisis terasa lebih netral dan mudah diikuti.
         </p>
 
-        <h3 className="text-2xl font-semibold mt-10 mb-4">Peran Analisis dalam Mengikuti Kompetisi Sepak Bola</h3>
+        <h3 className="text-2xl font-semibold mt-10 mb-4">Prediksi Skor yang Mudah Dipahami</h3>
         <p>
-          Analisis pertandingan menjadi bagian penting bagi banyak penggemar bola. Dengan melihat form tim, head-to-head, kondisi pemain, serta statistik terkini, seseorang bisa mendapatkan gambaran lebih jelas tentang kemungkinan jalannya sebuah laga. Liga138 Platform menyediakan ringkasan analisis yang mencakup aspek-aspek tersebut secara ringkas.
-        </p>
-
-        <p>
-          Informasi yang disajikan tidak dimaksudkan sebagai jaminan hasil, melainkan sebagai bahan referensi. Setiap pertandingan memiliki dinamika tersendiri yang bisa berubah karena berbagai faktor, mulai dari rotasi pemain, kondisi cuaca, hingga strategi yang diterapkan pelatih. Oleh karena itu, analisis sebaiknya selalu digunakan sebagai salah satu pertimbangan, bukan satu-satunya acuan.
-        </p>
-
-        <h3 className="text-2xl font-semibold mt-10 mb-4">Prediksi Skor sebagai Bahan Referensi</h3>
-        <p>
-          Prediksi skor di Liga138 Platform disusun berdasarkan kombinasi data statistik dan pengamatan terhadap performa tim. Prediksi ini membantu pengguna yang ingin melihat kemungkinan hasil berdasarkan angka-angka yang tersedia. Namun, penting untuk diingat bahwa prediksi bersifat probabilistik dan tidak dapat menjamin hasil akhir pertandingan.
+          Prediksi skor di Liga138 Platform disusun berdasarkan analisis yang sudah dibuat sebelumnya. Prediksi ini hanya berfungsi sebagai referensi, bukan jaminan hasil. Biasanya ditampilkan bersama alasan singkat kenapa skor tersebut dipilih, supaya pembaca tahu dasar pemikirannya.
         </p>
 
         <p>
-          Banyak pengguna memanfaatkan prediksi skor untuk memperkaya pemahaman mereka terhadap sebuah laga. Dengan membaca alasan di balik prediksi, seseorang bisa lebih memahami kekuatan dan kelemahan masing-masing tim. Hal ini membuat pengalaman mengikuti pertandingan menjadi lebih menarik dan informatif.
+          Banyak yang memanfaatkan prediksi skor hanya untuk melihat kemungkinan hasil berdasarkan data terkini. Liga138 Platform menempatkan prediksi ini sebagai pelengkap dari analisis, bukan sebagai fokus utama. Dengan begitu, informasi tetap seimbang antara data dan kemungkinan hasil.
         </p>
 
-        <h3 className="text-2xl font-semibold mt-10 mb-4">Klasemen dan Update Kompetisi</h3>
+        <h3 className="text-2xl font-semibold mt-10 mb-4">Klasemen Liga dan Update Kompetisi Terbaru</h3>
         <p>
-          Klasemen liga merupakan salah satu informasi yang paling sering dicari penggemar bola. Di Liga138 Platform, klasemen disajikan secara jelas agar pengguna dapat dengan mudah melihat posisi tim, selisih poin, serta performa terkini. Informasi ini diperbarui secara berkala mengikuti perkembangan kompetisi.
-        </p>
-
-        <p>
-          Selain klasemen, tersedia juga update jadwal dan hasil pertandingan. Dengan adanya informasi yang terstruktur, pengguna tidak perlu mencari data dari berbagai sumber yang berbeda. Semuanya dikumpulkan dalam satu tempat yang mudah diakses, sehingga lebih efisien untuk diikuti.
-        </p>
-
-        <h3 className="text-2xl font-semibold mt-10 mb-4">Mengapa Liga138 Platform Mendukung Situs Utama</h3>
-        <p>
-          Liga138 Platform sengaja dibangun sebagai situs pendukung yang fokus pada konten informasi. Tujuannya adalah memberikan nilai tambah berupa analisis dan data yang dapat membantu pengguna sebelum mereka mengakses layanan lengkap di domain utama. Dengan cara ini, kedua situs saling melengkapi tanpa saling bersaing dalam hal kata kunci atau intensi pencarian.
+          Klasemen liga di Liga138 Platform ditampilkan secara sederhana agar posisi setiap tim langsung terlihat. Pengguna bisa melihat selisih poin, jumlah pertandingan, serta performa terkini tanpa perlu mencari di tempat lain. Data klasemen ini diperbarui mengikuti hasil pertandingan yang baru selesai.
         </p>
 
         <p>
-          Pengguna yang datang ke Liga138 Platform biasanya mencari pemahaman lebih dalam tentang pertandingan. Setelah mendapatkan informasi yang dibutuhkan, mereka dapat melanjutkan ke situs utama untuk mengakses fitur lain yang lebih lengkap. Pola ini membantu menjaga relevansi konten sekaligus memperkuat otoritas domain utama.
+          Selain klasemen, tersedia juga update kompetisi yang mencakup jadwal mendatang dan hasil terbaru. Liga138 Platform mengumpulkan informasi ini dalam satu tempat supaya pengguna tidak perlu bolak-balik membuka banyak sumber. Semua disusun dengan bahasa yang ringan dan langsung pada intinya.
         </p>
 
-        <h3 className="text-2xl font-semibold mt-10 mb-4">Cara Menggunakan Informasi di Liga138 Platform</h3>
+        <h3 className="text-2xl font-semibold mt-10 mb-4">Liga138 sebagai Platform Informasi Sepak Bola</h3>
         <p>
-          Agar mendapatkan manfaat maksimal, pengguna disarankan untuk membaca analisis secara menyeluruh, bukan hanya melihat prediksi skor. Perhatikan faktor-faktor yang menjadi dasar analisis, lalu bandingkan dengan informasi lain yang tersedia. Pendekatan ini membuat keputusan yang diambil lebih matang dan berbasis data.
-        </p>
-
-        <p>
-          Selain itu, selalu pastikan mengakses informasi melalui sumber yang tepat. Liga138 Platform secara konsisten memperbarui konten agar tetap relevan dengan perkembangan kompetisi terkini. Dengan rutin mengikuti update yang tersedia, pengguna dapat terus mendapatkan gambaran terbaru mengenai kondisi tim dan jalannya liga.
-        </p>
-
-        <h3 className="text-2xl font-semibold mt-10 mb-4">Kesimpulan</h3>
-        <p>
-          Liga138 Platform berfungsi sebagai sumber informasi sepak bola yang fokus pada analisis pertandingan, prediksi skor, klasemen, dan update kompetisi. Konten yang disajikan bersifat referensi dan dirancang untuk melengkapi pengalaman pengguna sebelum mereka mengakses layanan yang lebih lengkap di situs utama.
+          Liga138 Platform berfungsi sebagai tempat informasi sepak bola yang melengkapi kebutuhan pengguna sebelum mereka mengakses layanan yang lebih lengkap di situs utama. Fokusnya tetap pada analisis pertandingan, prediksi skor, klasemen liga, dan update kompetisi yang disajikan secara lengkap namun tetap mudah dipahami.
         </p>
 
         <p>
-          Dengan menjaga fokus pada informasi yang jelas, transparan, dan mudah dipahami, Liga138 Platform dapat memberikan nilai tambah tanpa menimbulkan tumpang tindih dengan domain utama. Pengguna tetap mendapatkan manfaat berupa pemahaman yang lebih baik terhadap pertandingan, sementara situs utama tetap menjadi pusat layanan utama.
+          Dengan memisahkan konten informasi di sini, pengguna bisa mendapatkan ringkasan yang dibutuhkan tanpa harus langsung masuk ke halaman yang lebih kompleks. Liga138 Platform menjaga agar setiap informasi tetap relevan dengan perkembangan kompetisi yang sedang berjalan, sehingga data yang tersedia selalu mengikuti kondisi terkini.
+        </p>
+
+        <p>
+          Setiap bagian yang ada di Liga138 Platform saling terhubung. Analisis menjadi dasar prediksi skor, sementara klasemen dan update kompetisi memberikan konteks yang lebih luas. Semua disusun supaya pengguna bisa membaca secara berurutan atau langsung menuju bagian yang dibutuhkan, tanpa kehilangan alur informasinya.
         </p>
       </div>
     </section>

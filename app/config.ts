@@ -6,5 +6,6 @@ export const links = {
   jadwal: "https://login66.com/",
   faq: "https://login66.com/",
   login: "https://login66.com/",
-  daftar: "https://login66.com/register",
+  daftar: "https://login66.com/",
+  liga138: "https://uispace.net/",
 };
