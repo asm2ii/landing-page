@@ -1,3 +1,4 @@
+import { links } from "./config";
 export default function Kontenin() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-16">
