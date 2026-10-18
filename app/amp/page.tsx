@@ -1,6 +1,6 @@
 export default function AmpPage() {
   return (
-    <html amp="" lang="id">
+    <html lang="id" {...({ amp: "" } as any)}>
       <head>
         <meta charSet="utf-8" />
         <title>Liga138 Platform</title>
@@ -33,13 +33,13 @@ export default function AmpPage() {
       <body>
         <div className="wrap">
           <div className="card">
-            <amp-img
-              src="/produk.jpg"
-              width="600"
-              height="400"
-              layout="responsive"
-              alt="Liga138"
-            ></amp-img>
+            <img
+  src="/produk.jpg"
+  width="600"
+  height="400"
+  alt="Gambar"
+  style={{ width: "100%", height: "auto" }}
+/>
             <div className="content">
               <h1>Liga138 Platform</h1>
               <p>Prediksi skor dan analisis pertandingan sepak bola.</p>
