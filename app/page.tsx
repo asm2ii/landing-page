@@ -6,7 +6,7 @@ export default function Home() {
   const [capacity, setCapacity] = useState("256GB");
   const [color, setColor] = useState("Titanium Black");
 
-  const capacities = ["Parlay", "Slot", "Casino", "PKV"];
+  const capacities = ["MIX PARLAY", "SLOT ONLILNE", "PKV GAMES", "LIVE CASINO", "LIVE TOGEL"];
   const colors = [
     { name: "Titanium Black", hex: "#1a1a1a" },
     { name: "Titanium Gray", hex: "#8a8a8a" },
@@ -33,11 +33,12 @@ export default function Home() {
 
       {/* Hero + Product */}
       <section id="produk" className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-12">
-        <div className="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center">
-          <div className="text-center">
-            <div className="text-6xl mb-4">📱</div>
-            <p className="text-gray-500">Galaxy S26 Ultra</p>
-          </div>
+        <div className="bg-gray-100 rounded-2xl aspect-square overflow-hidden">
+          <img
+            src="/produk.jpg"
+            alt="Galaxy S26 Ultra"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div>
@@ -50,7 +51,7 @@ export default function Home() {
 
           <div className="mb-6">
             <h3 className="font-semibold mb-3">Kapasitas</h3>
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               {capacities.map((cap) => (
                 <button
                   key={cap}
@@ -110,7 +111,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Spesifikasi (BARU) */}
+      {/* Spesifikasi */}
       <section id="spesifikasi" className="py-16 max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-10">Spesifikasi</h2>
         <div className="border rounded-2xl overflow-hidden">
@@ -130,7 +131,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ulasan (BARU) */}
+      {/* Ulasan */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ulasan Pelanggan</h2>
