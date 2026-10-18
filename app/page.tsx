@@ -38,7 +38,7 @@ export default function Home() {
         <div className="bg-gray-100 rounded-2xl aspect-square overflow-hidden">
           <img
             src="/produk.jpg"
-            alt="Galaxy S26 Ultra"
+            alt="LIGA138 Platform"
             className="w-full h-full object-cover"
           />
         </div>
@@ -64,21 +64,6 @@ export default function Home() {
                 >
                   {cap}
                 </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-8">
-            <h3 className="font-semibold mb-3">Warna: {color}</h3>
-            <div className="flex gap-3">
-              {colors.map((c) => (
-                <button
-                  key={c.name}
-                  onClick={() => setColor(c.name)}
-                  className={`w-12 h-12 rounded-full border-2 ${color === c.name ? "border-black" : "border-gray-300"}`}
-                  style={{ backgroundColor: c.hex }}
-                  title={c.name}
-                />
               ))}
             </div>
           </div>
