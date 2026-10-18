@@ -91,9 +91,30 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">Fitur Unggulan</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Kamera AI 200MP", desc: "Hasil foto luar biasa di segala kondisi cahaya." },
-              { title: "Layar Dynamic AMOLED 2X", desc: "Tampilan cerah dan mulus untuk hiburan." },
-              { title: "Baterai Tahan Lama", desc: "Pengisian cepat dan daya yang awet seharian." },
+              { 
+    title: "Deposit QRIS Online 24 jam", 
+    desc: "Isi saldo kapan saja dengan QRIS secara cepat dan praktis." 
+  },
+  { 
+    title: "Pasaran Mix Parlay Terlengkap", 
+    desc: "Pilihan mix parlay lengkap dari berbagai liga dan pertandingan." 
+  },
+  { 
+    title: "Live Customer Service 24 jam", 
+    desc: "Tim support siap membantu setiap saat melalui live chat." 
+  },
+  { 
+    title: "Bonus dan Event Paling Cuan", 
+    desc: "Berbagai bonus dan event menarik dengan peluang keuntungan lebih besar." 
+  },
+  { 
+    title: "Cashout dan Parlay 2 tim", 
+    desc: "Fitur cashout dan parlay 2 tim untuk lebih fleksibel dalam bermain." 
+  },
+  { 
+    title: "Link Login mudah di akses", 
+    desc: "Akses login mudah dan cepat tanpa kendala." 
+  },
             ].map((f) => (
               <div key={f.title} className="bg-white p-6 rounded-2xl shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
