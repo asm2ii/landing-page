@@ -41,13 +41,13 @@ export default function AmpPage() {
           }}
         >
           {/* Gambar */}
-          <amp-img
-            src="/produk.jpg"
-            width="600"
-            height="400"
-            layout="responsive"
-            alt="Gambar"
-          />
+          <img
+  src="/produk.jpg"
+  width="600"
+  height="400"
+  alt="Gambar"
+  style={{ width: "100%", height: "auto" }}
+/>
 
           <h1 style={{ marginTop: "24px" }}>Judul Halaman</h1>
           <p>Deskripsi singkat di sini.</p>
