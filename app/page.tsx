@@ -213,7 +213,7 @@ export default function Home() {
     ))}
   </div>
 </section>
-<KontenPanjang />
+<Kontenin />
       {/* Footer */}
       <footer className="bg-black text-white py-8 text-center text-sm">
         <p>© 2026 Samsung. Semua hak dilindungi.</p>
