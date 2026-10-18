@@ -88,7 +88,7 @@ export default function Home() {
       {/* Features */}
       <section id="fitur" className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Fitur Unggulan</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Fitur Unggulan Liga138</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { 
@@ -127,15 +127,17 @@ export default function Home() {
 
       {/* Spesifikasi */}
       <section id="spesifikasi" className="py-16 max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10">Spesifikasi</h2>
+        <h2 className="text-3xl font-bold text-center mb-10">
+          Platform - Prediksi Skor & Analisis Pertandingan
+        </h2>
         <div className="border rounded-2xl overflow-hidden">
           {[
-            ["Layar", "6.8\" Dynamic AMOLED 2X"],
-            ["Prosesor", "Snapdragon 8 Elite"],
-            ["RAM", "12GB"],
-            ["Kamera Belakang", "200MP + 50MP + 12MP + 10MP"],
-            ["Baterai", "5000 mAh"],
-            ["Sistem Operasi", "Android 16"],
+            ["Deposit", "QRIS Online 24 Jam"],
+            ["Pasaran", "Mix Parlay Terlengkap"],
+            ["Support", "Live Customer Service 24 Jam"],
+            ["Bonus", "Bonus dan Event Paling Cuan"],
+            ["Fitur", "Cashout dan Parlay 2 Tim"],
+            ["Akses", "Link Login Mudah Diakses"],
           ].map(([label, value]) => (
             <div key={label} className="grid grid-cols-2 border-b last:border-b-0">
               <div className="bg-gray-50 p-4 font-medium">{label}</div>
@@ -147,41 +149,69 @@ export default function Home() {
 
       {/* Ulasan */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ulasan Pelanggan</h2>
-          <p className="text-5xl font-bold text-yellow-500 mb-2">4.8</p>
-          <p className="text-gray-600 mb-8">Dari 28.000+ ulasan</p>
-          <div className="grid md:grid-cols-3 gap-6 text-left">
-            {[
-              { name: "Andi", text: "Kamera sangat jernih, baterai awet seharian." },
-              { name: "Budi", text: "Layarnya luar biasa, nyaman untuk nonton." },
-              { name: "Citra", text: "Performa cepat dan desainnya premium." },
-            ].map((r) => (
-              <div key={r.name} className="bg-white p-6 rounded-2xl">
-                <p className="mb-3">"{r.text}"</p>
-                <p className="font-semibold text-sm">— {r.name}</p>
-              </div>
-            ))}
-          </div>
+  <div className="max-w-4xl mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-4">Ulasan Pengguna</h2>
+    <p className="text-5xl font-bold text-yellow-500 mb-2">4.8</p>
+    <p className="text-gray-600 mb-8">Dari 28.000+ ulasan</p>
+    <div className="grid md:grid-cols-3 gap-6 text-left">
+      {[
+        { name: "Andi", text: "Prediksi skornya cukup akurat, sangat membantu saat main mix parlay." },
+        { name: "Budi", text: "Analisis pertandingan jelas dan mudah dipahami, cocok buat pemula." },
+        { name: "Citra", text: "Deposit QRIS cepat dan customer service responsif 24 jam." },
+        { name: "Dedi", text: "Link login mudah diakses, tidak ribet saat ingin masuk." },
+        { name: "Eka", text: "Pasaran mix parlay lengkap dan proses cashout lancar." },
+        { name: "Fajar", text: "Bonus dan eventnya menarik, pengalaman main jadi lebih seru." },
+      ].map((r) => (
+        <div key={r.name} className="bg-white p-6 rounded-2xl">
+          <p className="mb-3">"{r.text}"</p>
+          <p className="font-semibold text-sm">— {r.name}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* FAQ */}
       <section id="faq" className="max-w-3xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-10">Pertanyaan Umum</h2>
-        <div className="space-y-4">
-          {[
-            { q: "Apakah charger termasuk?", a: "Ya, charger dan kabel USB-C sudah termasuk dalam paket." },
-            { q: "Apakah ada garansi resmi?", a: "Ya, garansi resmi Samsung 1 tahun." },
-            { q: "Bisa tukar tambah?", a: "Ya, program tukar tambah tersedia dengan potongan harga." },
-          ].map((item) => (
-            <details key={item.q} className="border rounded-xl p-4">
-              <summary className="font-semibold cursor-pointer">{item.q}</summary>
-              <p className="mt-2 text-gray-600">{item.a}</p>
-            </details>
-          ))}
-        </div>
-      </section>
+  <h2 className="text-3xl font-bold text-center mb-10">Pertanyaan Umum</h2>
+  <div className="space-y-4">
+    {[
+      {
+        q: "Apa itu Liga138 Platform?",
+        a: "Liga138 Platform adalah situs informasi sepak bola yang menyediakan prediksi skor, analisis pertandingan, klasemen liga, jadwal, serta update kompetisi secara rutin dan mudah dipahami."
+      },
+      {
+        q: "Bagaimana cara mengakses Liga138?",
+        a: "Akses dapat dilakukan melalui link login resmi yang tersedia di situs. Disarankan selalu menggunakan link yang valid agar proses masuk lebih aman dan lancar."
+      },
+      {
+        q: "Seberapa akurat prediksi skor yang diberikan?",
+        a: "Prediksi skor disusun berdasarkan analisis data pertandingan, form tim, dan informasi terkini. Namun hasil akhir tetap bergantung pada jalannya pertandingan dan tidak dapat dijamin 100% akurat."
+      },
+      {
+        q: "Metode deposit apa saja yang tersedia?",
+        a: "Salah satu metode yang didukung adalah deposit QRIS online yang dapat dilakukan kapan saja secara praktis dan cepat."
+      },
+      {
+        q: "Apakah tersedia layanan customer service?",
+        a: "Ya, tersedia live customer service 24 jam yang siap membantu pengguna melalui fitur live chat."
+      },
+      {
+        q: "Bagaimana cara menjaga keamanan akun?",
+        a: "Gunakan selalu link resmi, jangan membagikan informasi akun kepada pihak lain, dan pastikan mengakses situs dari perangkat yang aman."
+      },
+      {
+        q: "Apakah informasi di Liga138 Platform diperbarui secara rutin?",
+        a: "Ya, informasi seperti klasemen, jadwal, analisis, dan prediksi skor diperbarui secara berkala mengikuti perkembangan kompetisi."
+      },
+    ].map((item) => (
+      <details key={item.q} className="border rounded-xl p-4">
+        <summary className="font-semibold cursor-pointer">{item.q}</summary>
+        <p className="mt-2 text-gray-600">{item.a}</p>
+      </details>
+    ))}
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-black text-white py-8 text-center text-sm">
