@@ -2,25 +2,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://liga138-platform.vercel.app/"), // ganti nanti setelah deploy
-  title: {
-  default: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
+  metadataBase: new URL("https://liga138-platform.vercel.app"),
+  title: "Liga138 Platform - Prediksi Skor & Analisis Pertandingan",
   description:
     "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
   keywords: [
-  "Liga138 Platform",
-  "Liga138 informasi",
-  "Liga138 analisis",
-  "prediksi skor Liga138",
-  "klasemen liga",
-  "analisis pertandingan bola",
-  "update kompetisi sepak bola",
-  "jadwal bola",
-  "platform informasi bola",
-  "prediksi pertandingan",
-  "klasemen terkini",
-  "info sepak bola"
-],
+    "Liga138 Platform",
+    "Liga138 informasi",
+    "Liga138 analisis",
+    "prediksi skor Liga138",
+    "klasemen liga",
+    "analisis pertandingan bola",
+    "update kompetisi sepak bola",
+    "jadwal bola",
+    "platform informasi bola",
+    "prediksi pertandingan",
+    "klasemen terkini",
+    "info sepak bola",
+  ],
   authors: [{ name: "LIGA138" }],
   creator: "LIGA138",
   publisher: "LIGA138",
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
       "Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.",
     images: [
       {
-        url: "/og-image.jpg", // nanti bisa diganti dengan gambar asli
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "LIGA138 platform",
