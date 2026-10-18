@@ -64,6 +64,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  other: {
+  amphtml: "https://deposit-a76hfslpt-link-liga138.vercel.app",
+},
 };
 
 export default function RootLayout({
