@@ -1,5 +1,6 @@
+import { links } from "../config";
 export const metadata = {
-  title: "Halaman AMP",
+  title: "Liga138 Platform",
   alternates: {
     canonical: "https://liga138-platform.vercel.app/",
   },
@@ -30,79 +31,42 @@ export default function AmpPage() {
           />
         </noscript>
         <script async src="https://cdn.ampproject.org/v0.js" />
+        <style>{`
+          body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; margin: 0; }
+          .container { max-width: 480px; margin: 0 auto; padding: 24px 16px; }
+          .card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+          .content { padding: 24px; text-align: center; }
+          h1 { font-size: 24px; margin: 16px 0 8px; color: #111827; }
+          p { color: #4b5563; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
+          .btn { display: block; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: 600; margin-bottom: 12px; }
+          .btn-primary { background: #111827; color: white; }
+          .btn-secondary { background: #f3f4f6; color: #111827; border: 1px solid #e5e7eb; }
+        `}</style>
       </head>
       <body>
-        <div
-          style={{
-            maxWidth: "600px",
-            margin: "0 auto",
-            padding: "20px",
-            textAlign: "center",
-          }}
-        >
-          {/* Gambar */}
-          <img
-  src="/produk.jpg"
-  width="600"
-  height="400"
-  alt="Gambar"
-  style={{ width: "100%", height: "auto" }}
-/>
+        <div className="container">
+          <div className="card">
+            <img
+              src="/produk.jpg"
+              alt="Liga138 Platform"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+            <div className="content">
+              <h1>Liga138 Platform</h1>
+              <p>
+                Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini.
+              </p>
 
-          <h1 style={{ marginTop: "24px" }}>Judul Halaman</h1>
-          <p>Deskripsi singkat di sini.</p>
-
-          {/* 3 Tombol */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-              marginTop: "32px",
-            }}
-          >
-            <a
-              href="https://contoh.com/1"
-              style={{
-                background: "#000",
-                color: "#fff",
-                padding: "14px",
-                borderRadius: "8px",
-                textDecoration: "none",
-                fontWeight: "bold",
-                display: "block",
-              }}
-            >
-              Tombol 1
-            </a>
-            <a
-              href="https://contoh.com/2"
-              style={{
-                background: "#333",
-                color: "#fff",
-                padding: "14px",
-                borderRadius: "8px",
-                textDecoration: "none",
-                fontWeight: "bold",
-                display: "block",
-              }}
-            >
-              Tombol 2
-            </a>
-            <a
-              href="https://contoh.com/3"
-              style={{
-                background: "#555",
-                color: "#fff",
-                padding: "14px",
-                borderRadius: "8px",
-                textDecoration: "none",
-                fontWeight: "bold",
-                display: "block",
-              }}
-            >
-              Tombol 3
-            </a>
+              <a href={links.daftar} className="btn btn-primary">
+                Link Login Alternatif 1
+                </a>
+                <a href={links.login} className="btn btn-secondary">
+                Link Login Alternatif 2
+                </a>
+                <a href={links.jadwal} className="btn btn-secondary">
+                Link Login Alternatif 3
+                </a>
+            </div>
           </div>
         </div>
       </body>
