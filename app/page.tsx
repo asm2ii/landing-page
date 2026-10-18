@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { links } from "@/config";
+import { links } from "./config";
 export default function Home() {
   const [capacity, setCapacity] = useState("256GB");
   const [color, setColor] = useState("Titanium Black");
