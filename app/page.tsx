@@ -18,15 +18,17 @@ export default function Home() {
       {/* Header */}
       <header className="border-b bg-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-gray-900">SAMSUNG</div>
-          <nav className="hidden md:flex gap-6 text-sm">
-            <a href={links.produk} className="hover:text-blue-600">Produk</a>
-            <a href={links.fitur} className="hover:text-blue-600">Fitur</a>
-            <a href={links.spesifikasi} className="hover:text-blue-600">Spesifikasi</a>
-            <a href={links.faq} className="hover:text-blue-600">FAQ</a>
-          </nav>
+          <div className="text-2xl font-bold text-gray-900">LIGA138 Platform</div>
+          <nav className="flex gap-6">
+  <a href={links.beranda}>Beranda</a>
+  <a href={links.analisis}>Analisis</a>
+  <a href={links.prediksi}>Prediksi</a>
+  <a href={links.klasemen}>Klasemen</a>
+  <a href={links.jadwal}>Jadwal</a>
+  <a href={links.faq}>FAQ</a>
+</nav>
           <button className="bg-black text-white px-4 py-2 rounded-full text-sm">
-            Keranjang
+            Masuk
           </button>
         </div>
       </header>
@@ -42,15 +44,15 @@ export default function Home() {
         </div>
 
         <div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Galaxy S26 Ultra</h1>
-          <p className="text-xl text-gray-600 mb-6">Smartphone flagship dengan kamera AI dan layar terbaik.</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">LIGA138 Platform</h1>
+          <p className="text-xl text-gray-600 mb-6">Dapatkan prediksi skor, analisis pertandingan, dan informasi liga sepak bola terkini di Liga138 Platform. Cocok untuk penggemar bola yang ingin mengikuti perkembangan kompetisi.</p>
           <div className="mb-6">
             <p className="text-3xl font-bold text-gray-900">Rp 19.999.000</p>
             <p className="text-sm text-green-600">Hemat hingga Rp 2.200.000</p>
           </div>
 
           <div className="mb-6">
-            <h3 className="font-semibold mb-3">Kapasitas</h3>
+            <h3 className="font-semibold mb-3">Game Favorite</h3>
             <div className="flex flex-wrap gap-3">
               {capacities.map((cap) => (
                 <button
@@ -82,13 +84,19 @@ export default function Home() {
           </div>
 
           <div className="flex gap-4">
-            <button className="flex-1 bg-black text-white py-4 rounded-xl font-semibold hover:bg-gray-800">
-              Beli Sekarang
-            </button>
-            <button className="flex-1 border border-black py-4 rounded-xl font-semibold hover:bg-gray-50">
-              Tambah ke Wishlist
-            </button>
-          </div>
+  <a
+    href={links.analisis}
+    className="flex-1 bg-black text-white py-4 rounded-xl font-semibold hover:bg-gray-800 text-center"
+  >
+    Lihat Analisis
+  </a>
+  <a
+    href={links.klasemen}
+    className="flex-1 border border-black py-4 rounded-xl font-semibold hover:bg-gray-50 text-center"
+  >
+    Lihat Klasemen
+  </a>
+</div>
         </div>
       </section>
 
