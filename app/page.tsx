@@ -18,21 +18,41 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="border-b bg-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-gray-900">LIGA138 Platform</div>
-          <nav className="flex gap-6">
-  <a href={links.beranda}>Beranda</a>
-  <a href={links.analisis}>Analisis</a>
-  <a href={links.prediksi}>Prediksi</a>
-  <a href={links.klasemen}>Klasemen</a>
-  <a href={links.jadwal}>Jadwal</a>
-  <a href={links.faq}>FAQ</a>
-</nav>
-          <button className="bg-black text-white px-4 py-2 rounded-full text-sm">
-            Masuk
-          </button>
-        </div>
-      </header>
+  <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    {/* Logo */}
+    <div className="text-xl md:text-2xl font-bold text-gray-900">
+      LIGA138<br className="md:hidden" /> Platform
+    </div>
+
+    {/* Menu Desktop */}
+    <nav className="hidden md:flex gap-6 text-sm">
+      <a href={links.beranda} className="hover:text-blue-600">Beranda</a>
+      <a href={links.analisis} className="hover:text-blue-600">Analisis</a>
+      <a href={links.prediksi} className="hover:text-blue-600">Prediksi</a>
+      <a href={links.klasemen} className="hover:text-blue-600">Klasemen</a>
+      <a href={links.jadwal} className="hover:text-blue-600">Jadwal</a>
+      <a href={links.faq} className="hover:text-blue-600">FAQ</a>
+    </nav>
+
+    {/* Tombol Masuk */}
+    <a
+      href={links.login}
+      className="bg-black text-white px-4 py-2 rounded-full text-sm"
+    >
+      Masuk
+    </a>
+  </div>
+
+  {/* Menu Mobile (muncul di bawah logo) */}
+  <nav className="md:hidden flex flex-wrap gap-4 px-4 pb-3 text-sm border-t">
+    <a href={links.beranda} className="hover:text-blue-600">Beranda</a>
+    <a href={links.analisis} className="hover:text-blue-600">Analisis</a>
+    <a href={links.prediksi} className="hover:text-blue-600">Prediksi</a>
+    <a href={links.klasemen} className="hover:text-blue-600">Klasemen</a>
+    <a href={links.jadwal} className="hover:text-blue-600">Jadwal</a>
+    <a href={links.faq} className="hover:text-blue-600">FAQ</a>
+  </nav>
+</header>
 
       {/* Hero + Product */}
       <section id="produk" className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-12">
@@ -216,7 +236,7 @@ export default function Home() {
 <Kontenin />
       {/* Footer */}
       <footer className="bg-black text-white py-8 text-center text-sm">
-        <p>© 2026 Samsung. Semua hak dilindungi.</p>
+        <p>© 2026 LIGA138. Semua hak dilindungi.</p>
       </footer>
     </div>
   );
